@@ -1069,8 +1069,8 @@ endpoints:
       dropParams: ["stop", "user", "frequency_penalty", "presence_penalty"]
 
       # Electron Hub
-    - name: "Electron Hub"
-      apiKey: "${ELECTRON_HUB_KEY}"
+    - name: "ElectronHub"
+      apiKey: "${ELECTRONHUB_API_KEY}"
       baseURL: "https://api.electronhub.top/v1"
       models: 
         default: [
@@ -1086,4 +1086,4 @@ endpoints:
       summaryModel: "gpt-4o"
       forcePrompt: false
       dropParams: ["user", "frequency_penalty", "presence_penalty", "repition_penalty"]
-      modelDisplayLabel: "Electron Hub"
+      modelDisplayLabel: "ElectronHub"
