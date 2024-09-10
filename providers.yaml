@@ -1067,3 +1067,23 @@ endpoints:
       titleConvo: true
       titleModel: "router@q:1|c:2.12e-01|t:5.00e-04|i:2.78e-04"
       dropParams: ["stop", "user", "frequency_penalty", "presence_penalty"]
+
+      # Electron Hub
+    - name: "Electron Hub"
+      apiKey: "${ELECTRON_HUB_KEY}"
+      baseURL: "https://api.electronhub.top/v1"
+      models: 
+        default: [
+          "gpt-4o",
+          "gpt-4o-mini",
+          "gpt-4o-vision",
+          "gpt-4o-mini-vision"
+          ]
+        fetch: true
+      titleConvo: true
+      titleModel: "gpt-4o"
+      summarize: false
+      summaryModel: "gpt-4o"
+      forcePrompt: false
+      dropParams: ["user", "frequency_penalty", "presence_penalty", "repition_penalty"]
+      modelDisplayLabel: "Electron Hub"
