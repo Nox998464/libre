@@ -9,7 +9,7 @@ endpoints:
   custom:
       # Electron Hub
     - name: "ElectronHub"
-      apiKey: "${OPENROUTER_KEY}"
+      apiKey: "${ELECTRONHUB_API_KEY}"
       baseURL: "https://api.electronhub.top/v1"
       models: 
         default: [
